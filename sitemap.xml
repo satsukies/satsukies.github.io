@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://satsukies.github.io/</loc>
+    <loc>https://satsukies.github.io/categories/</loc>
     <lastmod>2020-05-04T02:40:22+09:00</lastmod>
   </url>
   
@@ -13,12 +13,18 @@
   </url>
   
   <url>
-    <loc>https://satsukies.github.io/post/test_post/</loc>
+    <loc>https://satsukies.github.io/categories/programming/</loc>
     <lastmod>2020-05-04T02:40:22+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://satsukies.github.io/categories/</loc>
+    <loc>https://satsukies.github.io/</loc>
+    <lastmod>2020-05-04T02:40:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://satsukies.github.io/post/test_post/</loc>
+    <lastmod>2020-05-04T02:40:22+09:00</lastmod>
   </url>
   
   <url>
