@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Satsuki&#39;s warehouse</title>
-    <link>https://blog.satsukies.dev/</link>
-    <description>Recent content on Satsuki&#39;s warehouse</description>
+    <title>Android on Satsuki&#39;s warehouse</title>
+    <link>https://blog.satsukies.dev/tags/android/</link>
+    <description>Recent content in Android on Satsuki&#39;s warehouse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
     <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
     
-	<atom:link href="https://blog.satsukies.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.satsukies.dev/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>AndroidTVでユーザにおすすめコンテンツを提案する方法 - Satsuki&#39;s warehouse</title>
+  <meta name="description" content="業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Satsuki\x27s warehouse",
+    
+    "url": "https:\/\/blog.satsukies.dev\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/blog.satsukies.dev\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/blog.satsukies.dev\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/blog.satsukies.dev\/post\/20200310-how-to-recommendation-in-androidtv\/",
+          "name": "Android t vでユーザにおすすめコンテンツを提案する方法"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "AndroidTVでユーザにおすすめコンテンツを提案する方法",
+  "description" : "業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので",
+  "inLanguage" : "en",
+  "wordCount":  1902 ,
+  "datePublished" : "2020-03-10T04:04:00",
+  "dateModified" : "2020-03-10T04:04:00",
+  "image" : "https:\/\/blog.satsukies.dev\/",
+  "keywords" : [ "Android" ],
+  "mainEntityOfPage" : "https:\/\/blog.satsukies.dev\/post\/20200310-how-to-recommendation-in-androidtv\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/blog.satsukies.dev\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/blog.satsukies.dev\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="AndroidTVでユーザにおすすめコンテンツを提案する方法" />
+<meta property="og:description" content="業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので">
+<meta property="og:url" content="https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Satsuki&#39;s warehouse" />
+
+  <meta name="twitter:title" content="AndroidTVでユーザにおすすめコンテンツを提案する方法" />
+  <meta name="twitter:description" content="業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので">
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.69.2" />
+  <link rel="alternate" href="https://blog.satsukies.dev/index.xml" type="application/rss+xml" title="Satsuki&#39;s warehouse"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://blog.satsukies.dev/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://blog.satsukies.dev/css/syntax.css" /><link rel="stylesheet" href="https://blog.satsukies.dev/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-166867736-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://blog.satsukies.dev/">Satsuki&#39;s warehouse</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>AndroidTVでユーザにおすすめコンテンツを提案する方法</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 10, 2020
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、
+その中で色々と調べたので少しずつ残していきます。</p>
+<p>今回は実装コードはないのであしからず。</p>
+<h1 id="androidtvデバイスとホーム画面">AndroidTVデバイスとホーム画面</h1>
+<p>AndroidTVには、スマホ（Android）のランチャーのような画面はありません。<br>
+代わりに、アプリの一覧やアプリがそれぞれ自由におすすめコンテンツを訴求できる枠などが
+まとめられたホーム画面が提供されています。</p>
+<p>ホーム画面は各行が横にスクロールできるようなUIになっており、
+行ごとに一括りにされた情報が列挙されています。</p>
+<p><img src="./androidtv-home.png" alt="Screenshot: AndroidTV&rsquo;s Home">
+<a href="https://developer.android.com/training/tv/discovery/recommendations-channel?hl=ja">ホーム画面のチャンネル | Android デベロッパー | Android Developers</a> より引用</p>
+<p>アプリの開発者は、仕様に沿っておすすめコンテンツを組み立てContentProviderへ登録する事で、
+このホーム画面に任意のコンテンツを並べてユーザへ訴求することができます。</p>
+<p>また、これらのおすすめの表示はユーザの操作によって並び順のカスタマイズや、
+表示されているコンテンツの削除などができるようになっています。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h1 id="ホーム画面でコンテンツを表示できる枠について">ホーム画面でコンテンツを表示できる枠について</h1>
+<p>開発者がコンテンツを登録することで表示できる場所はいくつか存在します。<br>
+以下にそれぞれ簡単にまとめておきます。</p>
+<h2 id="watch-nextチャンネル">Watch Nextチャンネル</h2>
+<p>このWatch Nextチャンネルは、先に示したホーム画面で2行目の位置に表示されている行です。<br>
+このチャンネルはAndroidOSが自動的に作成しており、管理もOSが行っています。</p>
+<p>ここには、アプリから視聴途中の動画コンテンツや、それに関連したコンテンツを表示したり、ユーザが自分で操作することで登録されたコンテンツなどが表示されます。</p>
+<p>このチャンネルは後述するレコメンデーションチャンネルとは異なり、チャンネル自体の並び順を変えたり、チャンネルを削除したり非表示にしたるすることができないようになっています。</p>
+<p>つまり、適切にコンテンツを登録する事で、ユーザにコンテンツを効率よく訴求できると思います。<br>
+なぜなら、常にファーストビューにコンテンツが表示されることになるからです。</p>
+
+<iframe
+  class="hatenablogcard"
+  style="width:100%;height:155px;max-width:500px;"
+  src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fdeveloper.android.com%2ftraining%2ftv%2fdiscovery%2frecommendations-channel%3fhl%3dja%23the_watch_next_channel"
+  width="300"
+  height="150"
+  frameborder="0"
+  scrolling="no"></iframe>
+
+<h2 id="レコメンデーションチャンネル">レコメンデーションチャンネル</h2>
+<p>Watch Nextチャンネルと比較すると、活用パターンに幅がありそうなチャンネルになります。</p>
+<p>こちらはアプリが自由に作成することができるタイプのチャンネルで、チャンネルそのものの登録や削除、更新と言った管理もアプリ側から行うことになります。</p>
+<p>チャンネルはいくつでも提供することができます。<br>
+例えば、YouTubeアプリの場合は以下のように3つのチャンネルを提供しています。</p>
+<ul>
+<li>あなたへのおすすめ</li>
+<li>急上昇</li>
+<li>登録チャンネル</li>
+</ul>
+<p><img src="./channels-by-youtube.png" alt="Recommendation Channels provided by YouTube App"></p>
+<p>目的やコンテンツのくくりごとなどで適切にチャンネルを作成し、コンテンツを登録してあげることで、ユーザにとって価値のあるホーム画面を構築する手助けができると思います。</p>
+
+<iframe
+  class="hatenablogcard"
+  style="width:100%;height:155px;max-width:500px;"
+  src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fdeveloper.android.com%2ftraining%2ftv%2fdiscovery%2frecommendations-channel%3fhl%3dja%23app_channels"
+  width="300"
+  height="150"
+  frameborder="0"
+  scrolling="no"></iframe>
+
+<h2 id="android-n以前でのおすすめ表示">Android N以前でのおすすめ表示</h2>
+<p>旧OSでのおすすめ表示は、ここまで紹介してきたチャンネルという概念がないので、別途開発が必要になります。<br>
+今後このおすすめを表示するデバイスは減っていくと思いますが、まだLollipop(API 21)のAndroidTVデバイスが多く存在する以上、こちらの対応も実質的に必須要件になってくることは避けられないと思います。</p>
+<p>レコメンデーションチャンネルとの最も大きな違いは、行が1つしかないことです。<br>
+アプリごとの行ではなく、全てのアプリが登録したおすすめコンテンツが同じ行に混在する形になります。</p>
+<p><img src="./old-android-recommendation.png" alt="recommendation card in old AndroidTV">
+<a href="https://developer.android.com/training/tv/discovery/recommendations-row?hl=ja">Android N 以前でのおすすめの表示 | Android デベロッパー | Android Developers</a>より引用</p>
+<p>登録できる情報に大きな差はないですが、登録するコンテンツの組み立て方などが微妙に異なるので、実装に注意が必要です。</p>
+
+<iframe
+  class="hatenablogcard"
+  style="width:100%;height:155px;max-width:500px;"
+  src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fdeveloper.android.com%2ftraining%2ftv%2fdiscovery%2frecommendations-row%3fhl%3dja"
+  width="300"
+  height="150"
+  frameborder="0"
+  scrolling="no"></iframe>
+
+<h1 id="まとめ">まとめ</h1>
+<p>とりあえず、AndroidTVでのおすすめコンテンツの訴求方法について簡単にまとめました。<br>
+Oreo(API 26)以上か、それ未満かによって表示形式も登録手法も大きく変わります。</p>
+<p>今後、Oreo以上のOSを搭載したデバイスが増えていくことは自明だと思いますが、現時点ではOreo未満のデバイスが多く存在しています。そのため、それぞれに合わせた実装を混在させることが求められます。</p>
+<p>これがそこそこ面倒です…<br>
+ですが、この機能への対応によって得られる訴求効果、特にリテンションに大きく貢献してくれる可能性がとても大きいと思っています。</p>
+<p>具体的な実装の手法については、追って記事にしたいと思います。<br>
+それでは。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>ただし、この操作ができるのはAndroid O(API 26)以降のOSを搭載したAndroidTVデバイスに限られます。市場に出回っている製品だと、Android Oよりも古いOSを搭載したデバイスがまだ多いです。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://blog.satsukies.dev//tags/android/">Android</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://blog.satsukies.dev/">Satsuki&#39;s warehouse</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.69.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://blog.satsukies.dev/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://blog.satsukies.dev/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

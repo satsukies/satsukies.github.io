@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Satsuki&#39;s warehouse</title>
-    <link>https://satsukies.github.io/post/</link>
+    <link>https://blog.satsukies.dev/post/</link>
     <description>Recent content in Posts on Satsuki&#39;s warehouse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 04 May 2020 02:40:22 +0900</lastBuildDate>
+    <copyright>Copyright © 2020 satsukies</copyright>
+    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
     
-	<atom:link href="https://satsukies.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.satsukies.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test Post</title>
-      <link>https://satsukies.github.io/post/test_post/</link>
-      <pubDate>Mon, 04 May 2020 02:40:22 +0900</pubDate>
+      <title>AndroidTVでユーザにおすすめコンテンツを提案する方法</title>
+      <link>https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/</link>
+      <pubDate>Tue, 10 Mar 2020 04:04:00 +0900</pubDate>
       
-      <guid>https://satsukies.github.io/post/test_post/</guid>
-      <description>this is a test post.</description>
+      <guid>https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/</guid>
+      <description>業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので</description>
     </item>
     
   </channel>

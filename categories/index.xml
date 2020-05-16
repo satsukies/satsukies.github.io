@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Satsuki&#39;s warehouse</title>
-    <link>https://satsukies.github.io/categories/</link>
+    <link>https://blog.satsukies.dev/categories/</link>
     <description>Recent content in Categories on Satsuki&#39;s warehouse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 04 May 2020 02:40:22 +0900</lastBuildDate>
+    <copyright>Copyright © 2020 satsukies</copyright>
+    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
     
-	<atom:link href="https://satsukies.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.satsukies.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Programming</title>
-      <link>https://satsukies.github.io/categories/programming/</link>
-      <pubDate>Mon, 04 May 2020 02:40:22 +0900</pubDate>
+      <link>https://blog.satsukies.dev/categories/programming/</link>
+      <pubDate>Tue, 10 Mar 2020 04:04:00 +0900</pubDate>
       
-      <guid>https://satsukies.github.io/categories/programming/</guid>
+      <guid>https://blog.satsukies.dev/categories/programming/</guid>
       <description></description>
     </item>
     
