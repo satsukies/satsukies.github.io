@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
-    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 03:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.satsukies.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anker PowerDrive&#43; Ⅲ Duoレビュー</title>
+      <link>https://blog.satsukies.dev/post/20200527-anker-car-charger/</link>
+      <pubDate>Wed, 27 May 2020 03:00:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/post/20200527-anker-car-charger/</guid>
+      <description>MacBookが給電じゃなくて充電できるシガーソケット用充電器が欲しかったのですが, 友人からプレゼン</description>
+    </item>
     
     <item>
       <title>AndroidTVでユーザにおすすめコンテンツを提案する方法</title>

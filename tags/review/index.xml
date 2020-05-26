@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Satsuki&#39;s warehouse</title>
-    <link>https://blog.satsukies.dev/</link>
-    <description>Recent content on Satsuki&#39;s warehouse</description>
+    <title>Review on Satsuki&#39;s warehouse</title>
+    <link>https://blog.satsukies.dev/tags/review/</link>
+    <description>Recent content in Review on Satsuki&#39;s warehouse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
     <lastBuildDate>Wed, 27 May 2020 03:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://blog.satsukies.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.satsukies.dev/tags/review/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://blog.satsukies.dev/post/20200527-anker-car-charger/</guid>
       <description>MacBookが給電じゃなくて充電できるシガーソケット用充電器が欲しかったのですが, 友人からプレゼン</description>
-    </item>
-    
-    <item>
-      <title>AndroidTVでユーザにおすすめコンテンツを提案する方法</title>
-      <link>https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/</link>
-      <pubDate>Tue, 10 Mar 2020 04:04:00 +0900</pubDate>
-      
-      <guid>https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/</guid>
-      <description>業務でAndroidTVのホーム画面にレコメンドを表示する機能の改修があり、 その中で色々と調べたので</description>
     </item>
     
   </channel>

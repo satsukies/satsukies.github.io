@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
-    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 03:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.satsukies.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anker</title>
+      <link>https://blog.satsukies.dev/tags/anker/</link>
+      <pubDate>Wed, 27 May 2020 03:00:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/tags/anker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gadget</title>
+      <link>https://blog.satsukies.dev/tags/gadget/</link>
+      <pubDate>Wed, 27 May 2020 03:00:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/tags/gadget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://blog.satsukies.dev/tags/review/</link>
+      <pubDate>Wed, 27 May 2020 03:00:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/tags/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -18,6 +45,15 @@
       <pubDate>Tue, 10 Mar 2020 04:04:00 +0900</pubDate>
       
       <guid>https://blog.satsukies.dev/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://blog.satsukies.dev/tags/programming/</link>
+      <pubDate>Tue, 10 Mar 2020 04:04:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/tags/programming/</guid>
       <description></description>
     </item>
     

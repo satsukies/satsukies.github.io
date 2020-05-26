@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
-    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 03:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.satsukies.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Review</title>
+      <link>https://blog.satsukies.dev/categories/review/</link>
+      <pubDate>Wed, 27 May 2020 03:00:00 +0900</pubDate>
+      
+      <guid>https://blog.satsukies.dev/categories/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Programming</title>
