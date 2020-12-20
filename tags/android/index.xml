@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>Copyright © 2020 satsukies</copyright>
-    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://blog.satsukies.dev/tags/android/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 10 Mar 2020 04:04:00 +0900</lastBuildDate><atom:link href="https://blog.satsukies.dev/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AndroidTVでユーザにおすすめコンテンツを提案する方法</title>
       <link>https://blog.satsukies.dev/post/20200310-how-to-recommendation-in-androidtv/</link>

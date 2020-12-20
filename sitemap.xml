@@ -4,21 +4,41 @@
   
   <url>
     <loc>https://blog.satsukies.dev/authors/</loc>
-    <lastmod>2020-06-08T23:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.satsukies.dev/tags/book/</loc>
-    <lastmod>2020-06-08T23:30:00+09:00</lastmod>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.satsukies.dev/categories/</loc>
-    <lastmod>2020-06-08T23:30:00+09:00</lastmod>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.satsukies.dev/post/</loc>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.satsukies.dev/categories/programming/</loc>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.satsukies.dev/</loc>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.satsukies.dev/authors/satsukies/</loc>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.satsukies.dev/post/20201220-scrcpy-with-androidtv/</loc>
+    <lastmod>2020-12-21T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.satsukies.dev/tags/book/</loc>
     <lastmod>2020-06-08T23:30:00+09:00</lastmod>
   </url>
   
@@ -29,16 +49,6 @@
   
   <url>
     <loc>https://blog.satsukies.dev/categories/review/</loc>
-    <lastmod>2020-06-08T23:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.satsukies.dev/</loc>
-    <lastmod>2020-06-08T23:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.satsukies.dev/authors/satsukies/</loc>
     <lastmod>2020-06-08T23:30:00+09:00</lastmod>
   </url>
   
@@ -79,11 +89,6 @@
   
   <url>
     <loc>https://blog.satsukies.dev/tags/programming/</loc>
-    <lastmod>2020-03-10T04:04:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.satsukies.dev/categories/programming/</loc>
     <lastmod>2020-03-10T04:04:00+09:00</lastmod>
   </url>
   
